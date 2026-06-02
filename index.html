@@ -14,8 +14,8 @@
   <!-- Viewport for Responsive Design -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicon -->
-  <link rel="shortcut icon" href="favicon.ico" type="imagex-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="public/favicon.ico" type="imagex-icon">
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon">
   <!-- Page Title -->
   <title> HERMAS - CV </title>
 </head>
@@ -24,31 +24,290 @@
 
   <!--======== Header ========-->
   <header>
-    <img> <!-- Profile picture -->
-    <h1><!-- Name --></h1>
-    <p><!-- Title --></p>
+    <!-- Profile picture -->
+    <img src="assets/images/hermas/profile-pic.png" alt="Hermas profile picture" width="150" height="150">
+
+    <!-- Name -->
+    <h1>
+      Hermas Francisco
+    </h1>
+
+    <!-- Title -->
+    <p>
+      Développeur Mobile et Web
+    </p>
+
+    <!-- Email, Phone, Location links -->
     <address>
-      <ul><!-- Email, Phone, Location links --></ul>
+      <ul>
+        <li>
+          <strong>Email :</strong>
+          <a href="mailto:franciscohermas@gmail.com">
+            franciscohermas@gmail.com
+          </a>
+        </li>
+        <li>
+          <strong>Téléphone :</strong>
+          <a href="tel:+2290169353860">
+            +229 01 69 35 38 60
+          </a>
+        </li>
+        <li>
+          <strong>Localisation :</strong>
+          <a href="https://maps.app.goo.gl/g4cPSfTCxsBD8oAi7" target="_blank" rel="noopener noreferrer">
+              Abomey-Calavi, Bénin
+          </a>
+        </li>
+      </ul>
     </address>
   </header>
 
   <!--======== Main Content ========-->
   <main>
     <!--==== About ====-->
-    <section id="a-propos">
+    <section id="about">
       <h2>À propos</h2>
-      <p><!-- Description --></p>
+
+      <!-- Description -->
+      <p>
+        Développeur mobile passionné, spécialisé en Flutter pour Android
+        & iOS. Je conçois des applications fluides, modernes et
+        performantes intégrant Firebase et API REST.
+        Je développe également des interfaces frontend réactives avec
+        React et Tailwind CSS, ainsi que des plateformes web avec
+        Laravel.
+      </p>
     </section>
 
     <!--==== Projects ====-->
-    <section id="projets">
+    <section id="projects">
       <h2>Projets Réalisés</h2>
+
+      <!-- Netflix Clone -->
       <article>
-        <h3>Nom du Projet 1</h3>
-        <img> <!-- Image of the project -->
-        <p><!-- Description --></p>
-        <dl><!-- Technical Stack --></dl>
-        <a href="...">Lien vers le projet</a>
+        <h3>Netflix Clone</h3>
+        <img src="assets/images/projects/project-img-01_netflix-clone.webp" alt="Image montrant le projet Netflix Clone" width="400" height="220">
+        <p>
+          Application mobile inspirée de Netflix pour visionner des films et séries. Conçue avec Flutter pour une interface fluide et moderne.
+        </p>
+        <dl>
+          <dt>
+            <strong>Stack Technique :</strong>
+          </dt>
+          <dd>Flutter</dd>
+        </dl>
+        <a href="https://github.com/fhermas22/netflix-clone" target="_blank">Code Source (GitHub)</a>
+      </article>
+
+      <!-- MiniStore -->
+      <article>
+        <h3>MiniStore</h3>
+        <img src="assets/images/projects/project-img-08_ministore.webp" alt="Image montrant le projet MiniStore" width="400" height="250">
+        <p>
+          Application mobile de type vitrine affichant de manière fluide un catalogue de produits. Conçue avec Flutter pour une interface moderne et reception de données via API.
+        </p>
+        <dl>
+          <dt>
+            <strong>Stack Technique :</strong>
+          </dt>
+          <dd>Flutter, API</dd>
+        </dl>
+        <a href="https://github.com/fhermas22/ministore" target="_blank">Code Source (GitHub)</a>
+      </article>
+
+      <!-- Douvivi -->
+      <article>
+        <h3>Douvivi</h3>
+        <img src="assets/images/projects/project-img-07_douvivi.webp" alt="Image montrant le projet Douvivi" width="400" height="220">
+        <p>
+          Application mobile de mise en relation entre clients et restaurateurs. Interface intuitive construite avec Flutter et Firebase.
+        </p>
+        <dl>
+          <dt>
+            <strong>Stack Technique :</strong>
+          </dt>
+          <dd>Flutter, Firebase</dd>
+        </dl>
+        <a>Développement en cours...</a>
+      </article>
+
+      <!-- IMeN Clone -->
+      <article>
+        <h3>IMeN Clone</h3>
+        <img src="assets/images/projects/project-img-17_imen-clone.webp" alt="Image montrant le projet IMeN Clone" width="350" height="350">
+        <p>
+          Clone moderne du site web de l'Institut des Métiers du Numérique (IMeN), réalisé avec React et Tailwind CSS. Ce projet reproduit l'aspect professionnel du site web original de l'IMeN grâce à une conception entièrement responsive et des sections dynamiques.
+        </p>
+        <dl>
+          <dt>
+            <strong>Stack Technique :</strong>
+          </dt>
+          <dd>React, Tailwind CSS</dd>
+        </dl>
+        <a href="https://imen-benin.vercel.app" target="_blank">Voir la Preview</a>
+        <a href="https://github.com/fhermas22/imen-clone" target="_blank">Code Source (GitHub)</a>
+      </article>
+
+      <!-- Writty -->
+      <article>
+        <h3>Writty</h3>
+        <img src="assets/images/projects/project-img-15_writty.webp" alt="Image montrant le projet Writty" width="450" height="220">
+        <p>
+          Application de chat en temps réel haute performance avec Laravel (Backend API), React & Tailwind CSS (Frontend) et MongoDB. Communication en temps réel propulsée par Laravel Reverb.
+        </p>
+        <dl>
+          <dt>
+            <strong>Stack Technique :</strong>
+          </dt>
+          <dd>Laravel, React, Tailwind CSS, MongoDB, Laravel Reverb</dd>
+        </dl>
+        <a href="https://github.com/fhermas22/writty" target="_blank">Code Source (GitHub)</a>
+      </article>
+
+      <!-- DineReserve -->
+      <article>
+        <h3>DineReserve</h3>
+        <img src="assets/images/projects/project-img-09_dinereserve.webp" alt="Image montrant le projet DineReserve" width="450" height="220">
+        <p>
+          Application web de gestion de réservation de tables pour restaurant. Réalisée avec Laravel, TailwindCSS et MySQL.
+        </p>
+        <dl>
+          <dt>
+            <strong>Stack Technique :</strong>
+          </dt>
+          <dd>Laravel, TailwindCSS, MySQL</dd>
+        </dl>
+        <a href="https://github.com/fhermas22/dinereserve" target="_blank">Code Source (GitHub)</a>
+      </article>
+
+      <!-- AutoSocial -->
+      <article>
+        <h3>AutoSocial</h3>
+        <img src="assets/images/projects/project-img-10_autosocial.webp" alt="Image montrant le projet AutoSocial" width="500" height="220">
+        <p>
+          Réseau social mini en preuve de concept construit avec Laravel. Projet conçu pour explorer l'architecture d'applications web modernes intégrant des agents autonomes et l'IA.
+        </p>
+        <dl>
+          <dt>
+            <strong>Stack Technique :</strong>
+          </dt>
+          <dd>Laravel, TailwindCSS, MySQL, AI</dd>
+        </dl>
+        <a href="https://github.com/fhermas22/autosocial" target="_blank">Code Source (GitHub)</a>
+      </article>
+
+      <!-- Hernotix Tech -->
+      <article>
+        <h3>Hernotix Tech</h3>
+        <img src="assets/images/projects/project-img-16_hernotix-tech-landing.webp" alt="Image montrant le projet Hernotix Tech" width="400" height="220">
+        <p>
+          Page d’accueil moderne, professionnelle et dynamique pour HERNOTIX Tech, un studio de développement Web et Mobile basé au Bénin. Développée avec React JS et TailwindCSS.
+        </p>
+        <dl>
+          <dt>
+            <strong>Stack Technique :</strong>
+          </dt>
+          <dd>React JS, Tailwind CSS</dd>
+        </dl>
+        <a href="https://hernotix-tech-landing.vercel.app" target="_blank">Voir la Preview</a>
+        <a href="https://github.com/fhermas22/hernotix-tech-landing" target="_blank">Code Source (GitHub)</a>
+      </article>
+
+      <!-- CandForm -->
+      <article>
+        <h3>CandForm</h3>
+        <img src="assets/images/projects/project-img-11_candform.webp" alt="Image montrant le projet CandForm" width="400" height="250">
+        <p>
+          Application web pour soumettre des candidatures à des offres d'emploi. Interface responsive avec TailwindCSS, validation client/serveur et confirmation email automatique.
+        </p>
+        <dl>
+          <dt>
+            <strong>Stack Technique :</strong>
+          </dt>
+          <dd>Laravel, TailwindCSS, MySQL</dd>
+        </dl>
+        <a href="https://github.com/fhermas22/candform" target="_blank">Code Source (GitHub)</a>
+      </article>
+
+      <!-- EduTrack -->
+      <article>
+        <h3>EduTrack</h3>
+        <img src="assets/images/projects/project-img-14_edutrack.webp" alt="Image montrant le projet EduTrack" width="400" height="220">
+        <p>
+          Interface frontend moderne de type Single Page Application (SPA) pour le suivi des apprenants. Développée avec Laravel 12, Blade, TailwindCSS et JavaScript pur.
+        </p>
+        <dl>
+          <dt>
+            <strong>Stack Technique :</strong>
+          </dt>
+          <dd>Laravel 12, Blade, TailwindCSS, JavaScript</dd>
+        </dl>
+        <a href="https://github.com/fhermas22/edutrack" target="_blank">Code Source (GitHub)</a>
+      </article>
+
+      <!-- LearnyClass -->
+      <article>
+        <h3>LearnyClass</h3>
+        <img src="assets/images/projects/project-img-13_learnyclass.webp" alt="Image montrant le projet LearnyClass" width="400" height="220">
+        <p>
+          Interface frontend moderne et réactive pour une plateforme d’apprentissage en ligne. Développée avec Laravel 12, Blade, TailwindCSS et JavaScript pur.
+        </p>
+        <dl>
+          <dt>
+            <strong>Stack Technique :</strong>
+          </dt>
+          <dd>Laravel 12, Blade, TailwindCSS, JavaScript</dd>
+        </dl>
+        <a href="https://github.com/fhermas22/learny-class" target="_blank">Code Source (GitHub)</a>
+      </article>
+
+      <!-- Library-API -->
+      <article>
+        <h3>Library-API</h3>
+        <img src="assets/images/projects/project-img-12_library-api.webp" alt="Image montrant le projet Library-API" width="400" height="220">
+        <p>
+          API REST moderne pour gérer un système de bibliothèque numérique. Gestion complète des livres et catégories avec Laravel et MySQL.
+        </p>
+        <dl>
+          <dt>
+            <strong>Stack Technique :</strong>
+          </dt>
+          <dd>Laravel, MySQL, REST API</dd>
+        </dl>
+        <a href="https://github.com/fhermas22/library-api" target="_blank">Code Source (GitHub)</a>
+      </article>
+
+      <!-- Fexels -->
+      <article>
+        <h3>Fexels</h3>
+        <img src="assets/images/projects/project-img-02_fexels.webp" alt="Image montrant le projet Fexels" width="400" height="220">
+        <p>
+          Galerie web pour explorer et télécharger des images libres de droits. Développée avec HTML, CSS et JavaScript pour une navigation rapide.
+        </p>
+        <dl>
+          <dt>
+            <strong>Stack Technique :</strong>
+          </dt>
+          <dd>HTML, CSS, JS</dd>
+        </dl>
+        <a href="https://fhermas22.github.io/fexels/" target="_blank">Voir la Preview</a>
+        <a href="https://github.com/fhermas22/fexels" target="_blank">Code Source (GitHub)</a>
+      </article>
+
+      <!-- Hernotix Blog -->
+      <article>
+        <h3>Hernotix Blog</h3>
+        <img src="assets/images/projects/project-img-03_hernotix-blog.webp" alt="Image montrant le projet Hernotix Blog" width="400" height="250">
+        <p>
+          Blog web conçu pour publier et lire des articles. Interface réactive propulsée par Laravel, TailwindCSS et MySQL.
+        </p>
+        <dl>
+          <dt>
+            <strong>Stack Technique :</strong>
+          </dt>
+          <dd>Laravel, TailwindCSS, MySQL</dd>
+        </dl>
+        <a href="https://github.com/fhermas22/hernotix-blog" target="_blank">Code Source (GitHub)</a>
       </article>
     </section>
 
@@ -59,13 +318,13 @@
     </section>
 
     <!--==== Skills ====-->
-    <section id="competences">
+    <section id="skills">
       <h2>Compétences Techniques</h2>
       <!-- Lists or Semantic Tables -->
     </section>
 
     <!--==== Languages ====-->
-    <section id="langues">
+    <section id="languages">
       <h2>Langues</h2>
       <dl><!-- Language + Level --></dl>
     </section>
