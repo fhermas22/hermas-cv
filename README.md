@@ -162,6 +162,6 @@ These are the semantic best practices reflected in the existing markup:
    - Projects/experiences/social links are organized with `ul > li`.
 
 ## Credits
-- Built by **fhermas22** — https://github.com/fhermas22
-- Website Portfolio **Hermas Francisco** — https://hermas.vercel.app
+- Built by **fhermas22** — [github.com/fhermas22](https://github.com/fhermas22)
+- Website Portfolio **Hermas Francisco** — [hermas.vercel.app](https://hermas.vercel.app)
 
