@@ -43,6 +43,7 @@ Open: `index.html` in a browser.
 .
 ├── index.html
 ├── README.md
+├── LICENSE
 ├── assets/
 │   └── images/
 │       ├── hermas/
@@ -78,15 +79,16 @@ Used for contact details (email, phone, location).
 
 ### `main`
 Wraps the primary page content.
-- Contains the main sections of the CV: About, Projects, Experiences, Skills.
+- Contains the main sections of the CV: About, Skills, Experiences, Education, Projects.
 
 ### `section`
 Groups related topics, each with a heading.
 - In this project:
   - `section#about`
-  - `section#projects`
-  - `section#experiences`
   - `section#skills`
+  - `section#experiences`
+  - `section#education`
+  - `section#projects`
 
 ### `h1` / `h2` / `h3`
 Heading hierarchy:
@@ -160,6 +162,9 @@ These are the semantic best practices reflected in the existing markup:
 
 7. **Readable list structure**
    - Projects/experiences/social links are organized with `ul > li`.
+
+## LICENSE
+This project is licensed under the [MIT License](https://github.com/fhermas22/hermas-cv?tab=MIT-1-ov-file).
 
 ## Credits
 - Built by **fhermas22** — [github.com/fhermas22](https://github.com/fhermas22)
