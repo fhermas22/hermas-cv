@@ -79,7 +79,7 @@ Used for contact details (email, phone, location).
 
 ### `main`
 Wraps the primary page content.
-- Contains the main sections of the CV: About, Skills, Experiences, Education, Projects.
+- Contains the main sections of the CV: About, Skills, Experiences, Education, Projects, Languages.
 
 ### `section`
 Groups related topics, each with a heading.
@@ -89,6 +89,7 @@ Groups related topics, each with a heading.
   - `section#experiences`
   - `section#education`
   - `section#projects`
+  - `section#languages`
 
 ### `h1` / `h2` / `h3`
 Heading hierarchy:
