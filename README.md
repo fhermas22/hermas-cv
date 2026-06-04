@@ -1,5 +1,8 @@
 # HERMAS — CV (Semantic HTML Portfolio)
 
+[![Language](https://img.shields.io/badge/Language-French_(fr)-green?style=flat-square)](https://github.com/fhermas22/hermas-cv)
+[![Version](https://img.shields.io/badge/Version-Latest%20(04%2F06%2F2026)-green?style=flat-square)](https://github.com/fhermas22/hermas-cv)
+
 A clean, responsive single-page CV/portfolio built with **semantic HTML** and lightweight structure (no framework required).
 
 ## Table of Contents
@@ -138,6 +141,11 @@ Indicates a quotation.
 Accessible images.
 - Each project photo has an `alt` description.
 
+### `figure` (and optional `figcaption`)
+Used to semantically group media with related context.
+- In this project, media can be wrapped in a `figure` element (optionally with `figcaption`) so the image stays logically connected to its description.
+
+
 ## Semantic Best Practices Used
 These are the semantic best practices reflected in the existing markup:
 
@@ -157,6 +165,8 @@ These are the semantic best practices reflected in the existing markup:
 
 5. **Accessible media**
    - Images include `alt` attributes.
+   - Media can be grouped with `figure` (and optionally `figcaption`) to keep the image and its context together semantically.
+
 
 6. **External link safety**
    - External links that open new tabs use `rel="noopener noreferrer"`.
