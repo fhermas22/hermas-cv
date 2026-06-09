@@ -1,0 +1,38 @@
+/*===========================================================
+    GLOBAL THEME VARIABLES
+===========================================================*/
+
+:root {
+    /*======= Main Theme Colors =======*/
+    --primary-color: #1E293B;
+    --secondary-color: #854D0E;
+    /*======= Background Colors =======*/
+    --bg-color: #F8FAFC;
+    /*======= Font Families =======*/
+    --font-title: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+/*===========================================================
+    GLOBAL RESET
+===========================================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*===========================================================
+    BODY STYLES
+===========================================================*/
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-title);
+}
