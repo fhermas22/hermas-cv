@@ -9,7 +9,7 @@
 
     /*======= Background Colors =======*/
     --bg-color: #F8FAFC;
-    
+
     /*======= Font Families =======*/
     --font-title: 'Poppins', sans-serif;
     --font-body: 'Inter', sans-serif;
@@ -31,14 +31,121 @@
 
 body {
     font-family: var(--font-body);
-    background-color: var(--bg-color);
+    background-color: rgba(248, 250, 252, 0.85);
     color: var(--primary-color);
 
-    /*======= Dot Grid Pattern =======*/
-    background-image: radial-gradient(rgba(133, 78, 14, 0.150) 1.5px, transparent 1.5px);
+    /* Subtle background dot grid pattern */
+    background-image: radial-gradient(rgba(133, 78, 14, 0.2) 1.5px, transparent 1.5px);
     background-size: 28px 28px;
+
+    /*======= SOFT-3D GLASSMORPHISM BOX EFFECT =======*/
+    max-width: 1000px;
+    margin: 50px auto; 
+    padding: 40px;
+    border-radius: 16px;
+
+    /* Frosted glass blur effect */
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+
+    /* Fine crisp border acting as the frame */
+    border: 1px solid rgba(255, 255, 255, 0.6);
+
+    /* Soft-3D blending: composite shadow and light reflection */
+    box-shadow: 
+        /* Main soft ambient drop shadow (bottom-right) */
+        8px 8px 24px rgba(30, 41, 59, 0.04),
+        16px 16px 48px rgba(133, 77, 14, 0.03),
+        /* Clean light reflection highlighting (top-left) */
+        -8px -8px 24px rgba(255, 255, 255, 0.8);
 }
+
+/*===========================================================
+    STRUCTURAL SPACING
+===========================================================*/
+
+header, 
+section, 
+aside, 
+footer {
+    margin-bottom: 40px;
+}
+
+article {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed rgba(30, 41, 59, 0.1);
+}
+
+article:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/*===========================================================
+    TYPOGRAPHY
+===========================================================*/
 
 h1, h2, h3 {
     font-family: var(--font-title);
+}
+
+/*===========================================================
+    LINK BUTTONS
+===========================================================*/
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/*===========================================================
+    LISTING STYLES
+===========================================================*/
+dt {
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-top: 15px;
+}
+dd {
+    margin-left: 10px;
+    color: var(--primary-color);
+}
+
+/*===========================================================
+    RESPONSIVE MEDIA STYLES
+===========================================================*/
+
+img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid var(--secondary-color);
+}
+
+
+
+/*===========================================================
+    RESPONSIVE LAYOUT (MOBILE OPTIMIZATION)
+===========================================================*/
+
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+        padding: 20px;
+        border-radius: 12px;
+    }
 }
