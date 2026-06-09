@@ -6,8 +6,10 @@
     /*======= Main Theme Colors =======*/
     --primary-color: #1E293B;
     --secondary-color: #854D0E;
+
     /*======= Background Colors =======*/
     --bg-color: #F8FAFC;
+    
     /*======= Font Families =======*/
     --font-title: 'Poppins', sans-serif;
     --font-body: 'Inter', sans-serif;
@@ -28,11 +30,15 @@
 ===========================================================*/
 
 body {
-  font-family: var(--font-body);
-  background-color: var(--bg-color);
-  color: var(--primary-color);
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+
+    /*======= Dot Grid Pattern =======*/
+    background-image: radial-gradient(rgba(133, 78, 14, 0.150) 1.5px, transparent 1.5px);
+    background-size: 28px 28px;
 }
 
 h1, h2, h3 {
-  font-family: var(--font-title);
+    font-family: var(--font-title);
 }
