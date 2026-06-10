@@ -278,6 +278,68 @@ address a:hover {
     margin-bottom: 0;
 }
 
+/*===============================
+    II.2. SKILLS SECTION STYLES
+=================================*/
+
+#skills {
+    padding: 10px 0;
+}
+
+#skills h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#skills li {
+    /* Display columns side-by-side on desktop */
+    display: inline-block;
+    vertical-align: top;
+    
+    /* Calculate precise width: 4 columns = 25% each minus padding space */
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+
+#skills li:last-child {
+    margin-right: 0;
+}
+
+#skills dl {
+    background-color: rgba(30, 41, 59, 0.02);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(30, 41, 59, 0.05);
+    min-height: 180px;
+}
+
+#skills dt {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    border-bottom: 1px solid rgba(133, 77, 14, 0.2);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+#skills dd {
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    opacity: 0.9;
+}
+
 
 
 /*===========================================================
@@ -289,5 +351,18 @@ address a:hover {
         margin: 10px;
         padding: 20px;
         border-radius: 12px;
+    }
+
+    /*======= SKILLS SECTION RESPONSIVITY =======*/
+    /* Stack skill columns vertically on smaller screens */
+    #skills li {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    /* Reset minimum height on mobile to fit content naturally */
+    #skills dl {
+        min-height: auto;
     }
 }
