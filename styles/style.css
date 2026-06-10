@@ -128,14 +128,6 @@ img {
     display: block;
 }
 
-#profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    border: 3px solid var(--secondary-color);
-}
-
 /*===========================================================
     HORIZONTAL SEPARATOR
 ===========================================================*/
@@ -155,8 +147,58 @@ hr {
 
 
 /*===========================================================
-    I. HEADER SECTION
+    I. HEADER SECTION BRANDING
 ===========================================================*/
+
+/*======= CENTRALIZED BRANDING WITH FINE-TUNED TYPOGRAPHY =======*/
+
+header {
+    /* Centralize branding elements without using Flex/Grid */
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+header figure {
+    margin: 0;
+    padding: 0;
+}
+
+#profile-pic {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: block;
+    border: 2px solid var(--secondary-color);
+    
+    /* Dual shadow for subtle depth */
+    box-shadow: 
+        0 4px 10px rgba(30, 41, 59, 0.05), /* Main ambient shadow */
+        0 8px 20px rgba(133, 77, 14, 0.03); /* Subtle bronze-tinted glow */
+
+    /* Framework for interaction transitions */
+    transition: all 0.3s ease-in-out;
+}
+
+header h1 {
+    /* Main branding identity text */
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
+}
+
+header p {
+    /* Professional Tagline / Job Title */
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 400;
+    opacity: 0.85; 
+    margin: 0;
+}
 
 /*======= CONTACT INFORMATION BADGES =======*/
 address {
@@ -192,7 +234,7 @@ address a {
     text-decoration: none;
     border-radius: 20px;
     border: 1px solid rgba(133, 77, 14, 0.15);
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
 }
 
 address a:hover {
