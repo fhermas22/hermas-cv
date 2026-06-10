@@ -136,6 +136,71 @@ img {
     border: 3px solid var(--secondary-color);
 }
 
+/*===========================================================
+    HORIZONTAL SEPARATOR
+===========================================================*/
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(
+        to right, 
+        transparent, 
+        rgba(133, 77, 14, 0.3) 50%, 
+        transparent
+    );
+    margin: 40px 0;
+}
+
+
+
+/*===========================================================
+    I. HEADER SECTION
+===========================================================*/
+
+/*======= CONTACT INFORMATION BADGES =======*/
+address {
+    font-style: normal;
+    margin-top: 15px;
+}
+
+address ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+address li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+address strong {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+address a {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 0;
+    background-color: rgba(133, 77, 14, 0.08);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid rgba(133, 77, 14, 0.15);
+    transition: all 0.2s ease;
+}
+
+address a:hover {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(133, 77, 14, 0.2);
+}
+
 
 
 /*===========================================================
