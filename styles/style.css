@@ -119,16 +119,6 @@ dd {
 }
 
 /*===========================================================
-    RESPONSIVE MEDIA STYLES
-===========================================================*/
-
-img {
-    max-width: 60%;
-    height: auto;
-    display: block;
-}
-
-/*===========================================================
     HORIZONTAL SEPARATOR
 ===========================================================*/
 
@@ -487,6 +477,125 @@ address a:hover {
     font-weight: 500;
 }
 
+/*===========================================================
+    II.5. PROJECTS SECTION STYLES
+===========================================================*/
+
+#projects {
+    padding: 10px 0;
+}
+
+#projects h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+#projects ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#projects li {
+    /* Display two project cards per row on desktop entries */
+    display: inline-block;
+    vertical-align: top;
+    
+    /* Perfect mathematics box sizing for 2 columns */
+    width: 48%;
+    margin-right: 3%;
+    margin-bottom: 35px;
+}
+
+#projects li:nth-child(2n) {
+    margin-right: 0;
+}
+
+#projects article {
+    background-color: rgba(30, 41, 59, 0.02);
+    border: 1px solid rgba(30, 41, 59, 0.06);
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 480px;
+}
+
+#projects article h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+#projects article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(30, 41, 59, 0.08);
+    margin-bottom: 15px;
+}
+
+#projects article p {
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    opacity: 0.85;
+    margin-bottom: 15px;
+    min-height: 65px;
+}
+
+#projects article dl {
+    margin-bottom: 20px;
+    padding-top: 5px;
+}
+
+#projects article dt {
+    display: inline-block;
+    margin-top: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+#projects article dd {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 13px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Specific buttons layout for project links overriding global configurations */
+#projects article a {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 0 8px 8px 0;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+#projects article a:hover {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(133, 77, 14, 0.15);
+}
+
+/* Specific styling for inactive or in-development links without an href attribute */
+#projects article a:not([href]) {
+    background-color: rgba(30, 41, 59, 0.05);
+    color: rgba(30, 41, 59, 0.4);
+    border-color: rgba(30, 41, 59, 0.1);
+    cursor: not-allowed;
+}
+
 
 
 /*===========================================================
@@ -542,5 +651,22 @@ address a:hover {
 
     #education dt {
         margin-bottom: 5px;
+    }
+
+    /*======= PROJECTS SECTION RESPONSIVITY =======*/
+    /* Transition project grid to a full single column structure on mobile viewports */
+    #projects li {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    #projects article {
+        min-height: auto;
+    }
+
+    #projects article p {
+        min-height: auto;
     }
 }
