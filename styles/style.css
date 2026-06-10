@@ -655,6 +655,75 @@ address a:hover {
     opacity: 0.85;
 }
 
+/*===========================================================
+    III. ASIDE SECTION STYLES (SOCIAL LINKS)
+===========================================================*/
+
+aside {
+    padding: 10px 0;
+}
+
+aside h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 12px;
+}
+
+/* Custom override for all standard anchor links within the aside container */
+aside a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgba(30, 41, 59, 0.04); /* Light professional grey background */
+    color: var(--primary-color);
+    border: 1px solid rgba(30, 41, 59, 0.08);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Interaction hover state for secondary social buttons */
+aside a:hover {
+    background-color: rgba(30, 41, 59, 0.08);
+    color: var(--secondary-color);
+    border-color: rgba(133, 77, 14, 0.3);
+    box-shadow: 0 2px 6px rgba(30, 41, 59, 0.05);
+}
+
+/* Highlighting the primary link containing the strong tag (Portfolio Live) */
+aside a strong {
+    font-weight: 600;
+}
+
+aside li:first-child a {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    border-color: var(--secondary-color);
+}
+
+/* Hover state interaction specifically for the primary portfolio link */
+aside li:first-child a:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(133, 77, 14, 0.2);
+}
+
 
 
 /*===========================================================
