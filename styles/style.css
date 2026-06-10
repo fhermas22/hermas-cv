@@ -243,6 +243,41 @@ address a:hover {
     box-shadow: 0 2px 8px rgba(133, 77, 14, 0.2);
 }
 
+/*===========================================================
+    II. MAIN SECTION BRANDING
+===========================================================*/
+/*===============================
+    II.1. ABOUT SECTION STYLES
+=================================*/
+
+#about {
+    padding: 10px 0;
+}
+
+#about h2 {
+    /* Section Title styling */
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 18px;
+    position: relative;
+    display: inline-block;
+}
+
+#about p {
+    /* Paragraph formatting and styling */
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    opacity: 0.9; 
+    margin-bottom: 15px; 
+}
+
+#about p:last-of-type {
+    margin-bottom: 0;
+}
+
 
 
 /*===========================================================
