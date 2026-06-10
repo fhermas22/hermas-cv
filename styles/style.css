@@ -248,7 +248,7 @@ address a:hover {
 ===========================================================*/
 /*===============================
     II.1. ABOUT SECTION STYLES
-=================================*/
+================================*/
 
 #about {
     padding: 10px 0;
@@ -280,7 +280,7 @@ address a:hover {
 
 /*===============================
     II.2. SKILLS SECTION STYLES
-=================================*/
+================================*/
 
 #skills {
     padding: 10px 0;
@@ -340,6 +340,88 @@ address a:hover {
     opacity: 0.9;
 }
 
+/*====================================
+    II.3. EXPERIENCES SECTION STYLES
+=====================================*/
+
+#experiences {
+    padding: 10px 0;
+}
+
+#experiences h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+#experiences ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Explicit targeting to force the dashed separation and padding on each item */
+#experiences article {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed rgba(30, 41, 59, 0.15);
+}
+
+#experiences li:last-child article {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#experiences article h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+/* Metadata container layout using pure block flow formatting */
+#experiences dl {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background-color: rgba(30, 41, 59, 0.02); /* Soft background to group metadata */
+    border-left: 3px solid var(--secondary-color); /* Bronze accent line indicator */
+    border-radius: 0 6px 6px 0;
+}
+
+#experiences dt {
+    display: inline-block;
+    margin-top: 0;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--secondary-color);
+}
+
+#experiences dd {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 20px;
+    font-size: 14px;
+    color: var(--primary-color);
+    opacity: 0.85;
+}
+
+#experiences dd:last-of-type {
+    margin-right: 0;
+}
+
+#experiences p {
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
 
 
 /*===========================================================
@@ -360,9 +442,27 @@ address a:hover {
         width: 100%;
         margin-right: 0;
     }
-    
+
     /* Reset minimum height on mobile to fit content naturally */
     #skills dl {
         min-height: auto;
+    }
+
+    /*======= EXPERIENCES SECTION RESPONSIVITY =======*/
+    /* Stack experience metadata elements on mobile screens */
+    #experiences dt, 
+    #experiences dd {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 4px;
+    }
+    
+    #experiences dd {
+        margin-bottom: 10px;
+    }
+    
+    #experiences dd:last-of-type {
+        margin-bottom: 0;
     }
 }
