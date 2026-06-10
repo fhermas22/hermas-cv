@@ -422,6 +422,71 @@ address a:hover {
     margin-top: 10px;
 }
 
+/*====================================
+    II.4. EDUCATION SECTION STYLES
+=====================================*/
+
+#education {
+    padding: 10px 0;
+}
+
+#education h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+#education ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#education li {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed rgba(30, 41, 59, 0.08);
+}
+
+/* Remove bottom spacing and dashed line on the very last education item */
+#education li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#education dl {
+    padding: 5px 0;
+}
+
+#education dt {
+    display: inline-block;
+    vertical-align: top;
+    width: 120px;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+#education dt em {
+    font-style: normal;
+}
+
+#education dd {
+    display: inline-block;
+    vertical-align: top;
+    
+    /* Calculate remaining space width: 100% minus the dt width (120px) */
+    width: calc(100% - 130px); 
+    margin-left: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
 
 
 /*===========================================================
@@ -464,5 +529,18 @@ address a:hover {
     
     #experiences dd:last-of-type {
         margin-bottom: 0;
+    }
+
+    /*======= EDUCATION SECTION RESPONSIVITY =======*/
+    /* Stack education timeline elements vertically on mobile screens */
+    #education dt,
+    #education dd {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #education dt {
+        margin-bottom: 5px;
     }
 }
