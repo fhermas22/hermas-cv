@@ -596,6 +596,65 @@ address a:hover {
     cursor: not-allowed;
 }
 
+/*===========================================================
+    II.6. LANGUAGES SECTION STYLES
+===========================================================*/
+
+#languages {
+    padding: 10px 0;
+}
+
+#languages h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#languages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#languages li {
+    /* Display language cards side-by-side on desktop */
+    display: inline-block;
+    vertical-align: top;
+    
+    /* Perfect horizontal split for 3 clean columns */
+    width: 31%;
+    margin-right: 3%;
+    margin-bottom: 15px;
+}
+
+#languages li:last-child {
+    margin-right: 0;
+}
+
+#languages dl {
+    background-color: rgba(133, 77, 14, 0.03);
+    border: 1px solid rgba(133, 77, 14, 0.08);
+    padding: 12px 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#languages dt {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 4px;
+}
+
+#languages dd {
+    margin-left: 0;
+    font-size: 13px;
+    color: var(--primary-color);
+    opacity: 0.85;
+}
+
 
 
 /*===========================================================
@@ -668,5 +727,14 @@ address a:hover {
 
     #projects article p {
         min-height: auto;
+    }
+
+    /*======= LANGUAGES SECTION RESPONSIVITY =======*/
+    /* Stack language cards vertically on small screens */
+    #languages li {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 12px;
     }
 }
