@@ -84,11 +84,30 @@ article:last-of-type {
 }
 
 /*===========================================================
-    TYPOGRAPHY
+    TYPOGRAPHY (STANDARDIZED WITH REM UNITS)
 ===========================================================*/
 
 h1, h2, h3 {
     font-family: var(--font-title);
+}
+
+body {
+    font-size: 0.938rem; /* Equivalent to 15px (15/16) */
+}
+
+h1 {
+    font-size: 2rem; /* Equivalent to 32px */
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.375rem; /* Equivalent to 22px */
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.125rem; /* Equivalent to 18px */
+    line-height: 1.4;
 }
 
 /*===========================================================
