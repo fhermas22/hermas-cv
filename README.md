@@ -28,6 +28,7 @@ This project is a **single HTML page** (`index.html`) featuring a professional C
 - **Technical skills** — organized with definition lists for clarity
 - **Social/professional links** — neatly grouped in the sidebar
 - **Footer section** — with professional quote and copyright
+- **Browser asset support** — updated favicon and manifest files for better browser/device integration
 
 Built with a focus on **semantic clarity**, **accessibility**, and **modern web standards** (no framework dependencies).
 
@@ -36,6 +37,8 @@ Built with a focus on **semantic clarity**, **accessibility**, and **modern web 
 Simply open `index.html` in any modern web browser to view the portfolio.
 
 **Deployment note:** When deploying, ensure relative paths to `assets/` and `public/` directories remain intact.
+
+**Note:** this repository now includes a full browser asset set in `public/`, including favicon variants and `site.webmanifest`.
 
 ## Key Features
 
@@ -90,7 +93,13 @@ Simply open `index.html` in any modern web browser to view the portfolio.
 │       └── projects/
 │           └── project images...
 ├── public/
-│   └── favicon.ico
+│   ├── apple-touch-icon.png
+│   ├── android-chrome-192x192.png
+│   ├── android-chrome-512x512.png
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── favicon.ico
+│   └── site.webmanifest
 └── styles/
     └── style.css
 ```
