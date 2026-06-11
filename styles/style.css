@@ -105,6 +105,18 @@ a {
     border-radius: 6px;
 }
 
+/* Custom focus ring for keyboard navigation accessibility */
+a:focus-visible {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 5px rgba(133, 77, 14, 0.2);
+}
+
+/* Hide default focus ring when clicking with a mouse */
+a:focus {
+    outline: none;
+}
+
 /*===========================================================
     LISTING STYLES
 ===========================================================*/
