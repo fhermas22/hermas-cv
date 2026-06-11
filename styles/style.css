@@ -9,7 +9,7 @@
 
     /*======= Background Colors =======*/
     --bg-color: #F8FAFC;
-    
+
     /*======= Font Families =======*/
     --font-title: 'Poppins', sans-serif;
     --font-body: 'Inter', sans-serif;
@@ -31,14 +31,891 @@
 
 body {
     font-family: var(--font-body);
-    background-color: var(--bg-color);
+    background-color: rgba(248, 250, 252, 0.85);
     color: var(--primary-color);
 
-    /*======= Dot Grid Pattern =======*/
-    background-image: radial-gradient(rgba(133, 78, 14, 0.150) 1.5px, transparent 1.5px);
+    /* Subtle background dot grid pattern */
+    background-image: radial-gradient(rgba(133, 78, 14, 0.2) 1.5px, transparent 1.5px);
     background-size: 28px 28px;
+
+    /*======= SOFT-3D GLASSMORPHISM BOX EFFECT =======*/
+    max-width: 1000px;
+    margin: 50px auto; 
+    padding: 40px;
+    border-radius: 16px;
+
+    /* Frosted glass blur effect */
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+
+    /* Fine crisp border acting as the frame */
+    border: 1px solid rgba(255, 255, 255, 0.6);
+
+    /* Soft-3D blending: composite shadow and light reflection */
+    box-shadow: 
+        /* Main soft ambient drop shadow (bottom-right) */
+        8px 8px 24px rgba(30, 41, 59, 0.04),
+        16px 16px 48px rgba(133, 77, 14, 0.03),
+        /* Clean light reflection highlighting (top-left) */
+        -8px -8px 24px rgba(255, 255, 255, 0.8);
 }
+
+/*===========================================================
+    STRUCTURAL SPACING
+===========================================================*/
+
+header, 
+section, 
+aside, 
+footer {
+    margin-bottom: 40px;
+}
+
+article {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed rgba(30, 41, 59, 0.1);
+}
+
+article:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/*===========================================================
+    TYPOGRAPHY (STANDARDIZED WITH REM UNITS)
+===========================================================*/
 
 h1, h2, h3 {
     font-family: var(--font-title);
+}
+
+body {
+    font-size: 0.938rem; /* Equivalent to 15px (15/16) */
+}
+
+h1 {
+    font-size: 2rem; /* Equivalent to 32px */
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.375rem; /* Equivalent to 22px */
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.125rem; /* Equivalent to 18px */
+    line-height: 1.4;
+}
+
+/*===========================================================
+    LINK BUTTONS
+===========================================================*/
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Custom focus ring for keyboard navigation accessibility */
+a:focus-visible {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 5px rgba(133, 77, 14, 0.2);
+}
+
+/* Hide default focus ring when clicking with a mouse */
+a:focus {
+    outline: none;
+}
+
+/*===========================================================
+    LISTING STYLES
+===========================================================*/
+dt {
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-top: 15px;
+}
+dd {
+    margin-left: 10px;
+    color: var(--primary-color);
+}
+
+/*===========================================================
+    HORIZONTAL SEPARATOR
+===========================================================*/
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(
+        to right, 
+        transparent, 
+        rgba(133, 77, 14, 0.3) 50%, 
+        transparent
+    );
+    margin: 40px 0;
+}
+
+
+
+/*===========================================================
+    I. HEADER SECTION BRANDING
+===========================================================*/
+
+/*======= CENTRALIZED BRANDING WITH FINE-TUNED TYPOGRAPHY =======*/
+
+header {
+    /* Centralize branding elements without using Flex/Grid */
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+header figure {
+    margin: 0;
+    padding: 0;
+}
+
+#profile-pic {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: block;
+    border: 2px solid var(--secondary-color);
+    
+    /* Dual shadow for subtle depth */
+    box-shadow: 
+        0 4px 10px rgba(30, 41, 59, 0.05), /* Main ambient shadow */
+        0 8px 20px rgba(133, 77, 14, 0.03); /* Subtle bronze-tinted glow */
+
+    /* Framework for interaction transitions */
+    transition: all 0.3s ease-in-out;
+}
+
+header h1 {
+    /* Main branding identity text */
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
+}
+
+header p {
+    /* Professional Tagline / Job Title */
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 400;
+    opacity: 0.85; 
+    margin: 0;
+}
+
+/*======= CONTACT INFORMATION BADGES =======*/
+address {
+    font-style: normal;
+    margin-top: 15px;
+}
+
+address ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+address li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+address strong {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+address a {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 0;
+    background-color: rgba(133, 77, 14, 0.08);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid rgba(133, 77, 14, 0.15);
+    transition: all 0.4s ease;
+}
+
+address a:hover {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(133, 77, 14, 0.2);
+}
+
+/*===========================================================
+    II. MAIN SECTION BRANDING
+===========================================================*/
+/*===============================
+    II.1. ABOUT SECTION STYLES
+================================*/
+
+#about {
+    padding: 10px 0;
+}
+
+#about h2 {
+    /* Section Title styling */
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 18px;
+    position: relative;
+    display: inline-block;
+}
+
+#about p {
+    /* Paragraph formatting and styling */
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    opacity: 0.9; 
+    margin-bottom: 15px; 
+}
+
+#about p:last-of-type {
+    margin-bottom: 0;
+}
+
+/*===============================
+    II.2. SKILLS SECTION STYLES
+================================*/
+
+#skills {
+    padding: 10px 0;
+}
+
+#skills h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#skills li {
+    /* Display columns side-by-side on desktop */
+    display: inline-block;
+    vertical-align: top;
+    
+    /* Calculate precise width: 4 columns = 25% each minus padding space */
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+
+#skills li:last-child {
+    margin-right: 0;
+}
+
+#skills dl {
+    background-color: rgba(30, 41, 59, 0.02);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(30, 41, 59, 0.05);
+    min-height: 180px;
+}
+
+#skills dt {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    border-bottom: 1px solid rgba(133, 77, 14, 0.2);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+#skills dd {
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    opacity: 0.9;
+}
+
+/*====================================
+    II.3. EXPERIENCES SECTION STYLES
+=====================================*/
+
+#experiences {
+    padding: 10px 0;
+}
+
+#experiences h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+#experiences ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Explicit targeting to force the dashed separation and padding on each item */
+#experiences article {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed rgba(30, 41, 59, 0.15);
+}
+
+#experiences li:last-child article {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#experiences article h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+/* Metadata container layout using pure block flow formatting */
+#experiences dl {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background-color: rgba(30, 41, 59, 0.02); /* Soft background to group metadata */
+    border-left: 3px solid var(--secondary-color); /* Bronze accent line indicator */
+    border-radius: 0 6px 6px 0;
+}
+
+#experiences dt {
+    display: inline-block;
+    margin-top: 0;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--secondary-color);
+}
+
+#experiences dd {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 20px;
+    font-size: 14px;
+    color: var(--primary-color);
+    opacity: 0.85;
+}
+
+#experiences dd:last-of-type {
+    margin-right: 0;
+}
+
+#experiences p {
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/*====================================
+    II.4. EDUCATION SECTION STYLES
+=====================================*/
+
+#education {
+    padding: 10px 0;
+}
+
+#education h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+#education ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#education li {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed rgba(30, 41, 59, 0.08);
+}
+
+/* Remove bottom spacing and dashed line on the very last education item */
+#education li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#education dl {
+    padding: 5px 0;
+}
+
+#education dt {
+    display: inline-block;
+    vertical-align: top;
+    width: 120px;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+#education dt em {
+    font-style: normal;
+}
+
+#education dd {
+    display: inline-block;
+    vertical-align: top;
+    
+    /* Calculate remaining space width: 100% minus the dt width (120px) */
+    width: calc(100% - 130px); 
+    margin-left: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/*===========================================================
+    II.5. PROJECTS SECTION STYLES
+===========================================================*/
+
+#projects {
+    padding: 10px 0;
+}
+
+#projects h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+#projects ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#projects li {
+    /* Display two project cards per row on desktop entries */
+    display: inline-block;
+    vertical-align: top;
+    
+    /* Perfect mathematics box sizing for 2 columns */
+    width: 48%;
+    margin-right: 3%;
+    margin-bottom: 35px;
+}
+
+#projects li:nth-child(2n) {
+    margin-right: 0;
+}
+
+#projects article {
+    background-color: rgba(30, 41, 59, 0.02);
+    border: 1px solid rgba(30, 41, 59, 0.06);
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 480px;
+}
+
+#projects article h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+#projects article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(30, 41, 59, 0.08);
+    margin-bottom: 15px;
+}
+
+#projects article p {
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    opacity: 0.85;
+    margin-bottom: 15px;
+    min-height: 65px;
+}
+
+#projects article dl {
+    margin-bottom: 20px;
+    padding-top: 5px;
+}
+
+#projects article dt {
+    display: inline-block;
+    margin-top: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+#projects article dd {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 13px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Specific buttons layout for project links overriding global configurations */
+#projects article a {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 0 8px 8px 0;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+#projects article a:hover {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(133, 77, 14, 0.15);
+}
+
+/* Specific styling for inactive or in-development links without an href attribute */
+#projects article a:not([href]) {
+    background-color: rgba(30, 41, 59, 0.05);
+    color: rgba(30, 41, 59, 0.4);
+    border-color: rgba(30, 41, 59, 0.1);
+    cursor: not-allowed;
+}
+
+/* Smooth transformation for project cards and images */
+#projects article {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+#projects li:hover article {
+    transform: translateY(-4px);
+    border-color: rgba(133, 77, 14, 0.2);
+    box-shadow: 0 10px 20px rgba(30, 41, 59, 0.04);
+}
+
+#projects article img {
+    transition: opacity 0.2s ease-in-out;
+}
+
+#projects li:hover article img {
+    opacity: 0.95;
+}
+
+/*===========================================================
+    II.6. LANGUAGES SECTION STYLES
+===========================================================*/
+
+#languages {
+    padding: 10px 0;
+}
+
+#languages h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#languages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#languages li {
+    /* Display language cards side-by-side on desktop */
+    display: inline-block;
+    vertical-align: top;
+    
+    /* Perfect horizontal split for 3 clean columns */
+    width: 31%;
+    margin-right: 3%;
+    margin-bottom: 15px;
+}
+
+#languages li:last-child {
+    margin-right: 0;
+}
+
+#languages dl {
+    background-color: rgba(133, 77, 14, 0.03);
+    border: 1px solid rgba(133, 77, 14, 0.08);
+    padding: 12px 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#languages dt {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 4px;
+}
+
+#languages dd {
+    margin-left: 0;
+    font-size: 13px;
+    color: var(--primary-color);
+    opacity: 0.85;
+}
+
+/*===========================================================
+    INLINE SVG LINK ICONS OPTIMIZATION
+===========================================================*/
+
+/* Prepares link elements for inline-block child alignment */
+#projects article a,
+aside ul li a {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    line-height: 16px;
+}
+
+/* Specific parameters for embedded vector graphic symbols */
+.link-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    position: relative;
+    top: -1px;
+    fill: currentColor;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Subtle micro-interaction layout zoom on hover */
+a:hover .link-icon {
+    transform: scale(1.1);
+}
+
+/*===========================================================
+    III. ASIDE SECTION STYLES (SOCIAL LINKS)
+===========================================================*/
+
+aside {
+    padding: 10px 0;
+}
+
+aside h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 12px;
+}
+
+/* Custom override for all standard anchor links within the aside container */
+aside a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgba(30, 41, 59, 0.04); /* Light professional grey background */
+    color: var(--primary-color);
+    border: 1px solid rgba(30, 41, 59, 0.08);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Interaction hover state for secondary social buttons */
+aside a:hover {
+    background-color: rgba(30, 41, 59, 0.08);
+    color: var(--secondary-color);
+    border-color: rgba(133, 77, 14, 0.3);
+    box-shadow: 0 2px 6px rgba(30, 41, 59, 0.05);
+}
+
+/* Highlighting the primary link containing the strong tag (Portfolio Live) */
+aside a strong {
+    font-weight: 600;
+}
+
+aside li:first-child a {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    border-color: var(--secondary-color);
+}
+
+/* Hover state interaction specifically for the primary portfolio link */
+aside li:first-child a:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(133, 77, 14, 0.2);
+}
+
+/*===========================================================
+    IV. FOOTER SECTION STYLES
+===========================================================*/
+
+footer {
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+footer blockquote {
+    margin: 0 auto 20px auto;
+    max-width: 600px;
+    padding: 0 15px;
+}
+
+footer blockquote p {
+    font-family: var(--font-title);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--secondary-color);
+}
+
+footer p {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--primary-color);
+    opacity: 0.6;
+    margin: 0;
+}
+
+
+
+/*===========================================================
+    RESPONSIVE LAYOUT (MOBILE OPTIMIZATION)
+===========================================================*/
+
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    /*======= SKILLS SECTION RESPONSIVITY =======*/
+    /* Stack skill columns vertically on smaller screens */
+    #skills li {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    /* Reset minimum height on mobile to fit content naturally */
+    #skills dl {
+        min-height: auto;
+    }
+
+    /*======= EXPERIENCES SECTION RESPONSIVITY =======*/
+    /* Stack experience metadata elements on mobile screens */
+    #experiences dt, 
+    #experiences dd {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 4px;
+    }
+    
+    #experiences dd {
+        margin-bottom: 10px;
+    }
+    
+    #experiences dd:last-of-type {
+        margin-bottom: 0;
+    }
+
+    /*======= EDUCATION SECTION RESPONSIVITY =======*/
+    /* Stack education timeline elements vertically on mobile screens */
+    #education dt,
+    #education dd {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #education dt {
+        margin-bottom: 5px;
+    }
+
+    /*======= PROJECTS SECTION RESPONSIVITY =======*/
+    /* Transition project grid to a full single column structure on mobile viewports */
+    #projects li {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    #projects article {
+        min-height: auto;
+    }
+
+    #projects article p {
+        min-height: auto;
+    }
+
+    /*======= LANGUAGES SECTION RESPONSIVITY =======*/
+    /* Stack language cards vertically on small screens */
+    #languages li {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
 }
