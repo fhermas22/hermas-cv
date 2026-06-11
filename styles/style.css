@@ -706,6 +706,37 @@ address a:hover {
 }
 
 /*===========================================================
+    INLINE SVG LINK ICONS OPTIMIZATION
+===========================================================*/
+
+/* Prepares link elements for inline-block child alignment */
+#projects article a,
+aside ul li a {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    line-height: 16px;
+}
+
+/* Specific parameters for embedded vector graphic symbols */
+.link-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    position: relative;
+    top: -1px;
+    fill: currentColor;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Subtle micro-interaction layout zoom on hover */
+a:hover .link-icon {
+    transform: scale(1.1);
+}
+
+/*===========================================================
     III. ASIDE SECTION STYLES (SOCIAL LINKS)
 ===========================================================*/
 
